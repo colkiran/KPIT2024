@@ -59,3 +59,13 @@ plyscr = [ply_scr for ply_scr in players.values()]
 print(f"plyscr :{plyscr}")
 
 print("-" * 60)
+plyscr = [scr for ply_scr in players.values() for scr in ply_scr]
+print(f"plyscr :{plyscr}")
+
+print("-" * 60)
+plyscr = [scr for ply_scr in players.values() for scr in ply_scr if scr > 200]
+print(f"plyscr :{plyscr}")
+
+print("-" * 60)
+plyscr = {name :[scr for scr in score if scr > 200] for name, score in players.items()}
+print(f'plyscr :{plyscr}')

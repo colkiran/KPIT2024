@@ -1,8 +1,9 @@
-Month = ['dec', 'aug', 'apr', 'nov', 'feb', 'oct', 'jan', 'mar', 'may', 'jul', 'sep', 'jun']
+def outer_fun(a, b):
+    def inner_fun(c, d):
+        return c + d
 
-calendar_months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
-sorted_months = []
-for month in calendar_months:
-    if month in Month:
-        sorted_months.append(month)
-print("Sorted Months:", sorted_months)
+    return inner_fun(a, b)
+    return a
+
+result = outer_fun(5, 10)
+print(result)
