@@ -23,11 +23,3 @@
 #
 # FW.close()
 
-
-What is likely to be the output after the following statements?
-
-import time
-y = time.asctime()
-print(y[:3])
-
-'Sat Feb 10 3:40:24 2016'
